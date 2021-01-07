@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.3.0" />
+    <PackageReference Include="SgmlReader" Version="1.8.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Nibo.Domain.Entities\Nibo.Domain.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

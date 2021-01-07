@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "SendFile";
+}
+@model IEnumerable<TransactionViewModel>
+
+<h1>Nibo</h1>
+<hr />
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        @if (ViewData["Error"] != null)
+        {
+            <h2 class="display-4">@ViewData["Error"]</h2>
+        }
+    </div>        
+</div>
+

@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "IndexUpload";
+}
+
+@model IEnumerable<TransactionViewModel>
+
+<h1>File Upload</h1>
+<hr />
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <section>
+                <form method="post" enctype="multipart/form-data" asp-controller="Upload" asp-action="SendFile">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <p>Send one or more files:</p>
+                            <input type="file" name="files" multiple />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <input type="submit" value="Send Files" />
+                        </div>
+                    </div>                    
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+
